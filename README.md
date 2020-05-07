@@ -12,7 +12,8 @@ Hardware needed:
 - 10KOhm resistor
 
 Place the display on the essential shield, connect the signal you want to measure to a 220nF condensator, the other side connect to 
-10kOhm resistor and to the trigger input on the essential shield. The other pin of the resistor goes to GND.
+10kOhm resistor and to the trigger input on the essential shield. The other pin of the resistor goes to GND. 
+This basically builds a differentiator which takes care, that there is a correct trigger impuls. I had it, that a source signal did not go all the way down to 0, but switched between +10V and +2V. Without the differentiator I saw no frequencys measured. :-)
 
 Load the bin file into your essential shield. 
 Now you are ready to measure! :-)
